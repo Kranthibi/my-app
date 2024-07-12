@@ -1,0 +1,51 @@
+.parent{
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    height: 50%;
+    width: 20%;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+form{
+    /* background-color: green; */
+    height: 90%;
+    width: 90%;
+    margin-top: 30px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+input{
+    height: 25px;
+    width: 85%;
+    /* margin-left: 10px; */
+    border-radius: 10px;
+}
+button{
+    height: 30px;
+    width: 85%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: green;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: white;
+    text-transform: capitalize;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+#em{
+    margin-bottom: 10px;
+}

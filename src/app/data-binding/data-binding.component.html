@@ -1,0 +1,27 @@
+<div class="parent">
+    <div class="child">
+        <p>data-binding works!</p>
+
+        <!-- Interpolation -->
+        <h4>My age is {{age}}</h4>
+        <h4>My name is {{name}}</h4>
+
+        <!-- Property Binding -->
+        <button [disabled]="!isvalid">Create</button>
+        <br>
+
+        <!-- Event Binding -->
+        <button (click)="submit()">submit</button>
+
+        <input type="text" (keypress)="search()">
+        <br>
+
+        <!-- Two Way Binding -->
+        <label for="">phone:</label>
+        <input type="text" [(ngModel)] = "phone">
+
+        <h4>{{phone}}</h4>
+
+    </div>
+    
+</div>

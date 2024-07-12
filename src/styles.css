@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Adds space below the table */
+    font-family: Arial, sans-serif; /* Choose your preferred font */
+  }
+  
+  /* Style the table header */
+  th {
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Gray border */
+  }
+  
+  /* Style the table cells */
+  td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Gray border */
+  }
+  
+  /* Alternating row colors for better readability */
+  tr:nth-child(even) {
+    background-color: #f9f9f9; /* Lighter gray background for even rows */
+  }
+  
+  /* Hover effect for rows */
+  tr:hover {
+    background-color: #e9e9e9; /* Light gray background on hover */
+  }
+  
