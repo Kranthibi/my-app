@@ -27,6 +27,7 @@ import { MyntraComponent } from './myntra/myntra.component';
 import { HttpClientModule } from '@angular/common/http';
 import { VechileComponent } from './vechile/vechile.component';
 import { FormComponent } from './form/form.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { FormComponent } from './form/form.component';
     EmployeesdatabaseComponent,
     MyntraComponent,
     VechileComponent,
-    FormComponent
+    FormComponent,
+    VehicleComponent
   ],
   imports: [
     BrowserModule,

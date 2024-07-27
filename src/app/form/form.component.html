@@ -1,7 +1,8 @@
+<h1>Create User Form</h1>
 <div>
     <form [formGroup]="createform">
         <label for="">Name: </label>
-        <input type="text" formControlName="name"><br> 
+        <input type="text" formControlName="name"><br>
 
         <label for="">Age :</label>
         <input type="number" formControlName="age"><br>
@@ -19,7 +20,24 @@
             <input type="number" formControlName="pincode">
 
         </div>
+        <div>
+            <label for="">Type:</label>
+            <input type="radio" name="type" formControlName="type" value="DayScholor">
+            <label for="">DayScholor</label>
+            <input type="radio" name="type" formControlName="type" value="Residential">
+            <label for="">Residential</label><br>
 
+            <div *ngIf="createform.get('type')?.value == 'DayScholor'">
+                <label for="">BusFee:</label>
+                <input type="number" formControlName="busfee"><br>
+            </div>
+
+            <div *ngIf="createform.get('type')?.value == 'Residential'">
+                <label for="">Hostel Fee:</label>
+                <input type="number" formControlName="hostelfee">
+            </div>
+        </div>
         <button (click)="submit()">Submit</button>
+
     </form>
 </div>
