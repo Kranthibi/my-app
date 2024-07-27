@@ -1,11 +1,11 @@
 
 <div class="parent">
     <div class="child">
-        <form action="">
+        <form [formGroup]="loginForm">
             <h2>login</h2>
-            <input type="text" placeholder="email" id="em">
-            <input type="password" placeholder="password">
-            <button routerLink="/dashboard">login </button>
+            <input type="text" placeholder="email" id="em" formControlName="email">
+            <input type="password" placeholder="password" formControlName="password">
+            <button (click)="login()" >login </button>
             <hr>
             <button routerLink="/google"> login with google</button>
             <button>login with facebook</button>

@@ -1,0 +1,79 @@
+<div class="parent">
+    <div class="top">
+        <h1>Employees Database</h1>
+        <form action="">
+            <h2>Employee's Registration</h2>
+            <div class="t1">
+                <label for="">Employee id:</label>
+                <input type="number">
+                <label for="">Employee Name:</label>
+                <input type="text">
+                <label for="">Role:</label>
+                <input type="text">
+            </div>
+            <div class="t2">
+                <label for="">Joining Date:</label>
+                <input type="date">
+                <label for="">Phone:</label>
+                <input type="number">
+                <label for="">Email:</label>
+                <input type="email">
+                <label for="">DOB:</label>
+                <input type="date">
+            </div>
+            <div class="t3">
+                <label for="">Gender: </label>
+                <input type="radio">
+                <label for="">Male</label>
+                <input type="radio">
+                <label for="">Female</label>
+                <label for="">Address</label>
+                <textarea name="" id=""></textarea >
+            </div>
+            <div class="t4">
+                <button>Register</button>
+                <button>Clear</button>
+            </div>            
+        </form>
+        <h2 id="op">Employees Details</h2>        
+    </div>
+    <div class="bottom">
+        <table>
+            <thead>
+                <th>S.No</th>
+                <th>Emp_Id</th>
+                <th>Emp_Name</th>
+                <th>Role</th>
+                <th>Joining Date</th>
+                <th>Phone No</th>
+                <th>Email</th>
+                <th>D.O.B</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let Employee of employees;let i=index">
+
+                    <td>{{Employee.S.No}}</td>
+                    <td>{{Employee.Emp_Id}}</td>
+                    <td>{{Employee.Emp_Name}}</td>
+                    <td>{{Employee.Role}}</td>
+                    <td>{{Employee.Joining_Date}}</td>
+                    <td>{{Employee.Phone_No}}</td>
+                    <td>{{Employee.Email}}</td>
+                    <td>{{Employee.DOB}}</td>
+                    <td>{{Employee.Gender}}</td>
+                    <td>{{Employee.Address}}</td>
+                    <!-- <td>{{Action}}</td> -->
+                    <td>
+                        <button >Fire</button>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>

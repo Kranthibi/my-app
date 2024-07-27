@@ -9,7 +9,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeComponent } from './home/home.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
@@ -21,6 +21,11 @@ import { PipesComponent } from './pipes/pipes.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { EventregistrationComponent } from './eventregistration/eventregistration.component';
 import { CartComponent } from './cart/cart.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { EmployeesdatabaseComponent } from './employeesdatabase/employeesdatabase.component';
+import { MyntraComponent } from './myntra/myntra.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -41,12 +46,17 @@ import { CartComponent } from './cart/cart.component';
     PipesComponent,
     EmployeesComponent,
     EventregistrationComponent,
-    CartComponent
+    CartComponent,
+    FlipkartComponent,
+    EmployeesdatabaseComponent,
+    MyntraComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

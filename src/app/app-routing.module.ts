@@ -17,6 +17,9 @@ import { PipesComponent } from './pipes/pipes.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { EventregistrationComponent } from './eventregistration/eventregistration.component';
 import { CartComponent } from './cart/cart.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { EmployeesdatabaseComponent } from './employeesdatabase/employeesdatabase.component';
+import { MyntraComponent } from './myntra/myntra.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -33,7 +36,10 @@ const routes: Routes = [
     {path:'pipes',component:PipesComponent},
     {path:'emp',component:EmployeesComponent},
     {path:'event',component:EventregistrationComponent},
-    {path:'cart',component:CartComponent}
+    {path:'cart',component:CartComponent},
+    {path:'flipkart',component:FlipkartComponent},
+    {path:'database',component:EmployeesdatabaseComponent},
+    {path:'myntra',component:MyntraComponent  }
   ]},
   {path:'google',component:GoogleComponent},
   {path:'',component:LoginComponent},

@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+/* 
+.parent {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.child {
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.r1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.a1>input{
+    width: 60%;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+} */
+
+/* .r2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.r2 div {
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 5px;
+}
+
+input[type="radio"] {
+    margin-left: 5px;
+} */
+
+
+
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+}
+.child{
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+}
+.top{
+    height: 35%;
+    width: 100%;
+    background-color: #008081;
+    display: flex;
+}
+.r1{
+    height: 30%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 10px;
+    gap: 30px;
+    
+}
+.a1>input{
+    height: 30px;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+.a1>button{
+    height: 40px;
+    width: 200px;
+    background-color: #027aff;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+.a1>button:hover{
+    cursor: pointer;
+}
+.a2{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+.a2>button{
+    height: 30px;
+    background-color: #fbc10b;
+    border: 0;
+    border-radius: 5px;
+}
+.a3{
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+.a3>button{
+    height: 30px;
+    background-color: #16a2ba;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.a4{
+    width: 30%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+.a4>button{
+    height: 30px;
+    background-color:#2a3e44;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.bottom{
+    height: 75%;
+    width: 100%;
+    background-color: #353a40;
+    color: white;
+}
+#del{
+    background-color: #dd3448;
+    border: 0;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+}
+form{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/* .r2{
+    height: 50px;
+} */
+/* .n1,.n2,.n3,>input{
+    height: 40px;
+    width: 50px;
+    
+   margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 8px;
+    background-color: red;
+} */
+/* .n1>input{
+    background-color: gray;
+    height: 30px;
+    width: 180px;
+} */
+#b{
+    background-color: #2aa645;
+    color: white;
+    height: 30px;
+    width: 150px;
+    border: 0;
+    border-radius: 5px;
+}
+
+
+
+
+

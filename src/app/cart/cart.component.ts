@@ -23,7 +23,5 @@ export class CartComponent implements OnInit {
   }
   cart(){
     this.items.push({'name':this.name,'price':this.price,'rating':this.rating})
-
-
   }
 }
