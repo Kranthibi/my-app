@@ -20,10 +20,12 @@ import { CartComponent } from './cart/cart.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { EmployeesdatabaseComponent } from './employeesdatabase/employeesdatabase.component';
 import { MyntraComponent } from './myntra/myntra.component';
+import { AuthenticationGuard } from './authentication.guard';
+import { FormComponent } from './form/form.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
-  {path:'dashboard',component:DashboardComponent ,children:[
+  {path:'dashboard', canActivate:[AuthenticationGuard], component:DashboardComponent ,children:[
     {path:'welcome',component:WelcomeComponent},
     {path:'home',component:HomeComponent},
     {path:'data-binding',component:DataBindingComponent},
@@ -39,8 +41,9 @@ const routes: Routes = [
     {path:'cart',component:CartComponent},
     {path:'flipkart',component:FlipkartComponent},
     {path:'database',component:EmployeesdatabaseComponent},
-    {path:'myntra',component:MyntraComponent  }
-  ]},
+    {path:'myntra',component:MyntraComponent},
+    {path:'form',component:FormComponent}
+    ]},
   {path:'google',component:GoogleComponent},
   {path:'',component:LoginComponent},
   {path:'**',component:PagenotfoundComponent}

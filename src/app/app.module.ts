@@ -25,6 +25,8 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
 import { EmployeesdatabaseComponent } from './employeesdatabase/employeesdatabase.component';
 import { MyntraComponent } from './myntra/myntra.component';
 import { HttpClientModule } from '@angular/common/http';
+import { VechileComponent } from './vechile/vechile.component';
+import { FormComponent } from './form/form.component';
 
 
 @NgModule({
@@ -49,7 +51,9 @@ import { HttpClientModule } from '@angular/common/http';
     CartComponent,
     FlipkartComponent,
     EmployeesdatabaseComponent,
-    MyntraComponent
+    MyntraComponent,
+    VechileComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
