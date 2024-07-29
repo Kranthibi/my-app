@@ -2,7 +2,7 @@
 <div>
     <form [formGroup]="createform">
         <label for="">Name: </label>
-        <input type="text" formControlName="name">
+        <input type="text" formControlName="name" appCapital>
         <div *ngIf="createform.get('name')?.touched && createform.get('name')?.invalid">
             <p class="error" *ngIf="createform.get('name')?.errors?.['required']">Name is Required.</p>
             <p class="error" *ngIf="createform.get('name')?.errors?.['minlength']">Name should contain minimum 3 charectors only</p>

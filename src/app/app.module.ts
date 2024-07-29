@@ -30,6 +30,7 @@ import { FormComponent } from './form/form.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { VehicledetailsComponent } from './vehicledetails/vehicledetails.component';
 import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
+import { CapitalDirective } from './capital.directive';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { CreatevehicleComponent } from './createvehicle/createvehicle.component'
     FormComponent,
     VehicleComponent,
     VehicledetailsComponent,
-    CreatevehicleComponent
+    CreatevehicleComponent,
+    CapitalDirective
   ],
   imports: [
     BrowserModule,

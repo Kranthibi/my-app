@@ -25,6 +25,7 @@ import { FormComponent } from './form/form.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { VehicledetailsComponent } from './vehicledetails/vehicledetails.component';
 import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
+import { NotifyGuard } from './notify.guard';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -48,7 +49,7 @@ const routes: Routes = [
     {path:'vehicle',component:VehicleComponent},
     {path:'vehicledetails/:id',component:VehicledetailsComponent},
     {path:'createvehicle',component:CreatevehicleComponent},
-    {path:'form',component:FormComponent}
+    {path:'form',canDeactivate:[NotifyGuard] ,component:FormComponent}
     ]},
   {path:'google',component:GoogleComponent},
   {path:'',component:LoginComponent},
