@@ -31,6 +31,7 @@ import { VehicleComponent } from './vehicle/vehicle.component';
 import { VehicledetailsComponent } from './vehicledetails/vehicledetails.component';
 import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
 import { CapitalDirective } from './capital.directive';
+import { PricePipe } from './price.pipe';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import { CapitalDirective } from './capital.directive';
     VehicleComponent,
     VehicledetailsComponent,
     CreatevehicleComponent,
-    CapitalDirective
+    CapitalDirective,
+    PricePipe
   ],
   imports: [
     BrowserModule,
