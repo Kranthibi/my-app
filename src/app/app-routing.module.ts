@@ -23,6 +23,8 @@ import { MyntraComponent } from './myntra/myntra.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { FormComponent } from './form/form.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
+import { VehicledetailsComponent } from './vehicledetails/vehicledetails.component';
+import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -44,6 +46,8 @@ const routes: Routes = [
     {path:'database',component:EmployeesdatabaseComponent},
     {path:'myntra',component:MyntraComponent},
     {path:'vehicle',component:VehicleComponent},
+    {path:'vehicledetails/:id',component:VehicledetailsComponent},
+    {path:'createvehicle',component:CreatevehicleComponent},
     {path:'form',component:FormComponent}
     ]},
   {path:'google',component:GoogleComponent},

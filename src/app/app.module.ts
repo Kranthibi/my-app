@@ -28,6 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { VechileComponent } from './vechile/vechile.component';
 import { FormComponent } from './form/form.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
+import { VehicledetailsComponent } from './vehicledetails/vehicledetails.component';
+import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
 
 
 @NgModule({
@@ -55,7 +57,9 @@ import { VehicleComponent } from './vehicle/vehicle.component';
     MyntraComponent,
     VechileComponent,
     FormComponent,
-    VehicleComponent
+    VehicleComponent,
+    VehicledetailsComponent,
+    CreatevehicleComponent
   ],
   imports: [
     BrowserModule,

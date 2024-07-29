@@ -1,1 +1,78 @@
-<p>vehicle works!</p>
+<div>
+    <!-- filtering -->
+    <input type="text" placeholder="Search Vehicles" [(ngModel)]="item" (keyup)="filter()">
+
+    <!-- Sorting -->
+    <label for="">Column</label >
+    <select name="" id="" [(ngModel)]="column">
+        <option >color</option>
+        <option >fuel</option>
+    </select>
+    <label for="">Order</label>
+    <select [(ngModel)]="order">
+        <option >asc</option>
+        <option >desc</option>
+    </select>
+    <button (click)="sort()" >Sort</button>
+
+    <!-- Pagination -->
+    <label for="">Limit</label >
+    <select [(ngModel)]="limit">
+        <option >5</option>
+        <option >10</option>
+        <option >20</option>
+        <option >30</option>
+        <option >40</option>
+    </select>
+    <label for="">Order</label>
+    <select name="" id=""  [(ngModel)]="pageno">
+        <option >1</option>
+        <option >2</option>
+        <option >3</option>
+        <option >4</option>
+        <option >5</option>
+        <option >6</option>
+        <option >7</option>
+    </select>
+    <button (click)="page()">Page</button>
+</div>
+<div>
+    <table >
+        <thead >
+            <tr>
+                <th>Vehicle</th >
+                <th>manufacturer</th>
+                <th>model</th>
+                <th>type</th>
+                <th>fuel</th>
+                <th>color</th>
+                <th>image</th>
+                <th>cost</th>
+                <th>id</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let vehicle of vehicles">
+                <td>{{vehicle.Vehicle}}</td>
+                <td>{{vehicle.manufacturer}}</td>
+                <td>{{vehicle.model}}</td>
+                <td>{{vehicle.type}}</td>
+                <td>{{vehicle.fuel}}</td>
+                <td>{{vehicle.color}}</td>
+                <td>
+                    <img src="{{vehicle.image}}" alt="" width="100px" height="100px">
+                </td>
+                <td>{{vehicle.cost}}</td>
+                <td>{{vehicle.id}}</td>
+                <td>
+                    <button routerLink="/dashboard/vehicledetails/{{vehicle.id}}">View</button >
+                    <button>Edit</button>
+                    <button (click)="delete(vehicle.id)">Delete</button>
+                </td>
+            
+            </tr>
+
+        </tbody>
+    </table>
+</div>
