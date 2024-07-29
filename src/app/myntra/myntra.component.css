@@ -57,6 +57,7 @@ body {
     width: 200px;
     /* background-color: gray; */
     box-shadow: 0px 0px 5px gray;
+    text-transform: capitalize;
     
 }
 .pics>button{

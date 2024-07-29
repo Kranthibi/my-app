@@ -4,30 +4,30 @@
 
         <div>
             <h2>CATEGORIES</h2>
-            <input type="checkbox">
+            <input  type="checkbox" (click)="mens()"  name="category">
             <label for="">men's clothing</label>
             <br>
-            <input type="checkbox">
-            <label for="">jewellery</label><br>
-            <input type="checkbox">
+            <input type="checkbox" (click)="jewelery()" name="category">
+            <label for="">jewelery</label><br>
+            <input type="checkbox" (click)="electronics()" name="category">
             <label for="">electronics</label>
             <br>
-            <input type="checkbox">
+            <input type="checkbox" (click)="womens()" name="category">
             <label for="">women's clothing</label>
             
         </div>
         <div class="PRICE">
             <h2>PRICE</h2>
-            <input type="checkbox">
+            <input type="checkbox" (click)="s7to50()">
             <label for="">Rs.7 to Rs.50</label>
             <br>
-            <input type="checkbox">
+            <input type="checkbox" (click)="f50to300()">
             <label for="">Rs.50 to Rs.300</label>
             <br>
-            <input type="checkbox">
+            <input type="checkbox" (click)="t300to600()">
             <label for="">Rs.300 to Rs.600</label>
             <br>
-            <input type="checkbox">
+            <input type="checkbox" (click)="r600to1000()">
             <label for="">Rs.600 to Rs.1000</label>
             
         </div>
@@ -35,10 +35,10 @@
     <div class="right1">
         <div class="pr">
             <label for="">Price Range</label>
-            <select name="" id="">
-                <option value="">All</option>
-                <option  value="">Low To High</option>
-                <option value="">High To Low</option>
+            <select name="" id="" (change)="sort($event)" >
+                <option value="all">All</option>
+                <option  value="ltoh">Low To High</option>
+                <option value="htol">High To Low</option>
             </select>
         </div>
         <div class="pics" *ngFor="let product of products">
