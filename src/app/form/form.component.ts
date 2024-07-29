@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
+import { domainValidators } from '../circle/Validators';
 
 @Component({
   selector: 'app-form',
@@ -12,7 +13,7 @@ export class FormComponent implements OnInit {
     name: new FormControl(null,[Validators.required,Validators.minLength(3),Validators.maxLength(10)]),
     age: new FormControl(null,[Validators.required,Validators.min(0),Validators.max(100)]),
     phone: new FormControl(null,[Validators.required,Validators.min(1000000000),Validators.max(9999999999)]),
-    email: new FormControl(null,[Validators.email]),
+    email: new FormControl(null,[Validators.email,domainValidators]),
     address: new FormGroup({
       city: new FormControl(null,[Validators.required]),
       pincode: new FormControl(null,[Validators.required,Validators.min(100000),Validators.max(999999)])

@@ -34,6 +34,7 @@
         <div *ngIf="createform.get('email')?.touched && createform.get('email')?.invalid">
             <p class="error" *ngIf="createform.get('email')?.errors?.['required']">email  is Required.</p>
             <p class="error" *ngIf="createform.get('email')?.errors?.['email']">invalid email format</p>
+            <p class="error" *ngIf="createform.get('email')?.errors?.['domainValidator']">Only LtiMindtree mails are accepted.</p>
         </div>
 
         <div formGroupName="address">
