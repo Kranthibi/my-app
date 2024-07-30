@@ -32,6 +32,8 @@ import { VehicledetailsComponent } from './vehicledetails/vehicledetails.compone
 import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
 import { CapitalDirective } from './capital.directive';
 import { PricePipe } from './price.pipe';
+import { CreateCompanyComponent } from './create-company/create-company.component';
+import { ParentComponent } from './parent/parent.component';
 
 
 @NgModule({
@@ -63,7 +65,9 @@ import { PricePipe } from './price.pipe';
     VehicledetailsComponent,
     CreatevehicleComponent,
     CapitalDirective,
-    PricePipe
+    PricePipe,
+    CreateCompanyComponent,
+    ParentComponent
   ],
   imports: [
     BrowserModule,

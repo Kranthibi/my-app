@@ -1,0 +1,91 @@
+<div>
+    <form [formGroup]="companyForm">
+        <label for="">Company Name</label>
+        <input type="text" formControlName="companyname" appCapital>
+        <br>
+        <div *ngIf="companyForm.get('companyname')?.touched && companyForm.get('companyname')?.invalid">
+            <p class="error" *ngIf="companyForm.get('companyname')?.errors?.['required']">**Enter the company name</p>
+            <p class="error" *ngIf="companyForm.get('companyname')?.errors?.['minlength']">Enter minimum 3 digits</p>
+        </div>
+        <label for="">Founded</label>
+        <input type="month" formControlName="founded"><br>
+        <label for="">CEO</label>
+        <input type="text" formControlName="ceo"><br>
+
+        <div formGroupName="location">
+
+            <label for="">Address</label>
+            <input type="text" formControlName="address"><br>
+
+            <label for="">City</label>
+            <input type="text" formControlName="city">
+            <br>
+
+            <div *ngIf="companyForm.get('location')?.get('city')?.touched && companyForm.get('location')?.get('city')?.invalid">
+                <p class="error" *ngIf="companyForm.get('location')?.get('city')?.errors?.['required']">** Enter City Name</p>
+                <p class="error"*ngIf="companyForm.get('location')?.get('city')?.errors?.['minlength']">Enter minimum 3 digits</p>
+            </div>
+
+            <label for="">State</label>
+            <input type="text" formControlName="state"><br>
+            <label for="">Zipcode</label>
+            <input type="number" formControlName="zipcode"><br>
+            <label for="">Country</label>
+            <input type="text" formControlName="country"><br>
+        </div>
+        
+        <label for="">Departments</label><br>
+        <button (click)="departments()"> Add Departments</button><br>
+
+
+        <div formArrayName="departments">
+            <div *ngFor="let department of departmentsFormArray.controls; let i=index">
+                <div formGroupName="{{i}}">   
+                    <h3>Department {{i+1}}</h3>           
+                    <label for="">Department Name</label>
+                    <input type="text" formControlName="departmentname"><br>
+                    <label for="">Head</label>
+                    <input type="text" formControlName="head"><br>
+                    <label for="">Employees</label>
+                    <input type="number" formControlName="employees"><br>
+                    <label for="">Budget</label>
+                    <input type="number" formControlName="budget">
+                    <br>
+                    <div *ngIf="departmentsFormArray.controls[i]?.get('budget')?.touched && departmentsFormArray.controls[i]?.get('budget')?.invalid">
+                        <p class="error" *ngIf="departmentsFormArray.controls[i]?.get('budget')?.errors?.['required']"> Budget is required </p>
+                        <p class="error" *ngIf="departmentsFormArray.controls[i]?.get('budget')?.errors?.['min']">Budget must be minimum 100000</p>
+
+                    </div>
+
+                    <button (click)="delete(i)">Delete</button>
+                </div>  
+            </div>
+        </div>
+
+        <label for="">CompanyType</label>
+        <input type="radio" name="tye" formControlName="type" value="service">
+        <label for="">Service</label>
+        <input type="radio" name="tye"  formControlName="type" value="product">
+        <label for="">Product</label>
+
+        <div *ngIf="companyForm.get('type')?.value=='service'">
+            <label for="">Client Name</label>
+            <input type="text" formControlName="clientName">
+            <div *ngIf="companyForm.get('clientName')?.touched && companyForm.get('clientName')?.invalid">
+                <p class="error" *ngIf="companyForm.get('clientName')?.errors?.['required']">** Enter Client Name </p>
+            </div>
+        </div>
+
+        <div *ngIf="companyForm.get('type')?.value=='product'">
+            <label for="">Product Name</label>
+            <input type="text" formControlName="productName">
+            <div *ngIf="companyForm.get('productName')?.touched && companyForm.get('productName')?.invalid">
+                <p class="error" *ngIf="companyForm.get('productName')?.errors?.['required']">** Enter Product Name </p>
+            </div>
+        </div>
+
+        <button>Submit</button>
+
+
+    </form>
+</div>

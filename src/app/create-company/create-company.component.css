@@ -1,0 +1,78 @@
+/* Form container */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form labels */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Form inputs */
+form input[type="text"],
+form input[type="number"],
+form input[type="radio"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Form radio inputs */
+form input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Department section */
+form .formArrayName {
+    margin-top: 20px;
+}
+
+form .formArrayName h3 {
+    font-size: 18px;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+form .formArrayName div {
+    margin-bottom: 20px;
+}
+
+/* Button */
+form button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #004494;
+}
+
+/* Radio buttons */
+form label[for=""] {
+    display: inline;
+    font-weight: normal;
+    margin-right: 10px;
+}
+.error{
+    color: red;
+}

@@ -55,9 +55,9 @@
         </div>
         <div>
             <label for="">Type:</label>
-            <input type="radio" name="type" formControlName="type" value="DayScholor">
+            <input type="radio" name="typ" formControlName="type" value="DayScholor">
             <label for="">DayScholor</label>
-            <input type="radio" name="type" formControlName="type" value="Residential">
+            <input type="radio" name="typ" formControlName="type" value="Residential">
             <label for="">Residential</label><br>
 
             <div *ngIf="createform.get('type')?.value == 'DayScholor'">
@@ -79,6 +79,7 @@
                 </div>
             </div>
         </div>
+        <label for="">Cards</label>
 
         <div formArrayName="cards">
             <div *ngFor="let card of cardsFormArray.controls; let i=index">
@@ -117,7 +118,7 @@
             </div>
         </div>
 
-        <label for="">Cards</label>
+       
         <button (click)="addCard( )">Add Card</button>
 
 

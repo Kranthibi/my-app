@@ -67,7 +67,7 @@
                 <td>{{vehicle.id}}</td>
                 <td>
                     <button routerLink="/dashboard/vehicledetails/{{vehicle.id}}">View</button >
-                    <button>Edit</button>
+                    <button routerLink="/dashboard/edit-vehicle/{{vehicle.id}}" >Edit</button>
                     <button (click)="delete(vehicle.id)">Delete</button>
                 </td>
             

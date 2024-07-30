@@ -26,6 +26,7 @@ import { VehicleComponent } from './vehicle/vehicle.component';
 import { VehicledetailsComponent } from './vehicledetails/vehicledetails.component';
 import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
 import { NotifyGuard } from './notify.guard';
+import { CreateCompanyComponent } from './create-company/create-company.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -49,7 +50,9 @@ const routes: Routes = [
     {path:'vehicle',component:VehicleComponent},
     {path:'vehicledetails/:id',component:VehicledetailsComponent},
     {path:'createvehicle',component:CreatevehicleComponent},
-    {path:'form',canDeactivate:[NotifyGuard] ,component:FormComponent}
+    {path:'edit-vehicle/:id',component:CreatevehicleComponent},
+    {path:'form',canDeactivate:[NotifyGuard] ,component:FormComponent},
+    {path:'create-company',canDeactivate:[NotifyGuard],component:CreateCompanyComponent}
     ]},
   {path:'google',component:GoogleComponent},
   {path:'',component:LoginComponent},

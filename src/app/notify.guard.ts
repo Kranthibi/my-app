@@ -8,17 +8,19 @@ import { FormComponent } from './form/form.component';
 })
 export class NotifyGuard implements CanDeactivate<unknown> {
   canDeactivate(
-    component: FormComponent,
+    component: unknown,
     currentRoute: ActivatedRouteSnapshot,
     currentState: RouterStateSnapshot,
     nextState?: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      if(component.createform.dirty){
-        return confirm("Data not saved.");
-      }
-      else{
-        return true;
+      return confirm("Data not Saved");
+      // if(component.createform.dirty){
+      //   return confirm("Data not saved.");
+      // }
+      // else{
+      //   return true;
 
-      }
+      // 
+      
     
   }
   
