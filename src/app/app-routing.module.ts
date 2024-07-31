@@ -31,6 +31,7 @@ import { ParentComponent } from './parent/parent.component';
 import { Calculator1Component } from './calculator1/calculator1.component';
 import { RatingComponent } from './rating/rating.component';
 import { MemesComponent } from './memes/memes.component';
+import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -60,7 +61,8 @@ const routes: Routes = [
     {path:'create-company',canDeactivate:[NotifyGuard],component:CreateCompanyComponent},
     {path:'parent',component:ParentComponent},
     {path:'calculator1',component:Calculator1Component  },
-    {path:'rating',component:RatingComponent}
+    {path:'rating',component:RatingComponent},
+    {path:'about-company',component:AboutCompanyComponent}
     ]},
   {path:'google',component:GoogleComponent},
   {path:'',component:LoginComponent},
