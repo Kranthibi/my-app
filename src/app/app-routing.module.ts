@@ -27,6 +27,10 @@ import { VehicledetailsComponent } from './vehicledetails/vehicledetails.compone
 import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
 import { NotifyGuard } from './notify.guard';
 import { CreateCompanyComponent } from './create-company/create-company.component';
+import { ParentComponent } from './parent/parent.component';
+import { Calculator1Component } from './calculator1/calculator1.component';
+import { RatingComponent } from './rating/rating.component';
+import { MemesComponent } from './memes/memes.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -51,8 +55,12 @@ const routes: Routes = [
     {path:'vehicledetails/:id',component:VehicledetailsComponent},
     {path:'createvehicle',component:CreatevehicleComponent},
     {path:'edit-vehicle/:id',component:CreatevehicleComponent},
+    {path:'memes',component:MemesComponent},
     {path:'form',canDeactivate:[NotifyGuard] ,component:FormComponent},
-    {path:'create-company',canDeactivate:[NotifyGuard],component:CreateCompanyComponent}
+    {path:'create-company',canDeactivate:[NotifyGuard],component:CreateCompanyComponent},
+    {path:'parent',component:ParentComponent},
+    {path:'calculator1',component:Calculator1Component  },
+    {path:'rating',component:RatingComponent}
     ]},
   {path:'google',component:GoogleComponent},
   {path:'',component:LoginComponent},

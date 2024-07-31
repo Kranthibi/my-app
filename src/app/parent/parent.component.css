@@ -1,0 +1,13 @@
+.box{
+    margin: 40px;
+    height: 150px;
+    background-color: lightblue;
+}
+.sibling{
+    margin: 40px;
+    height: 250px;
+    background-color: lawngreen;
+    width: 40%;
+    display: inline-block;
+
+}

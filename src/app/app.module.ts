@@ -34,6 +34,14 @@ import { CapitalDirective } from './capital.directive';
 import { PricePipe } from './price.pipe';
 import { CreateCompanyComponent } from './create-company/create-company.component';
 import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { Calculator1Component } from './calculator1/calculator1.component';
+import { OperationsComponent } from './operations/operations.component';
+import { RatingComponent } from './rating/rating.component';
+import { MemesComponent } from './memes/memes.component';
+import { AboutUsModule } from './about-us/about-us.module';
 
 
 @NgModule({
@@ -67,14 +75,22 @@ import { ParentComponent } from './parent/parent.component';
     CapitalDirective,
     PricePipe,
     CreateCompanyComponent,
-    ParentComponent
+    ParentComponent,
+    ChildComponent,
+    Sibling1Component,
+    Sibling2Component,
+    Calculator1Component,
+    OperationsComponent,
+    RatingComponent,
+    MemesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AboutUsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

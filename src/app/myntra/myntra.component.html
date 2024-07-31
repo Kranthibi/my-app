@@ -45,6 +45,7 @@
             
             <img src="{{product.image}}" alt="" width="200px" height="180px">
             <button>{{product.rating.rate}} &#9733; | {{product.rating.count}}</button>
+            <app-rating [rating]="product.rating.rate" ></app-rating>
             <h3>{{product.category}}</h3>
             <p>{{product.title}}</p>
             <p><b>Rs.{{product.price}}</b> <small><span style="text-decoration: line-through;">Rs.2999</span></small><span style="color: red;">(81% OFF)</span></p>

@@ -5,34 +5,34 @@
             <h2>Employee's Registration</h2>
             <div class="t1">
                 <label for="">Employee id:</label>
-                <input type="number">
+                <input type="number" (keyp)="search(item)" placeholder="search id" [(ngModel)]="item">
                 <label for="">Employee Name:</label>
-                <input type="text">
+                <input type="text" [(ngModel)]="newemployee.EmpName" >
                 <label for="">Role:</label>
-                <input type="text">
+                <input type="text" [(ngModel)]="newemployee.Role">
             </div>
             <div class="t2">
                 <label for="">Joining Date:</label>
-                <input type="date">
+                <input type="date" [(ngModel)]="newemployee.JoiningDate">
                 <label for="">Phone:</label>
-                <input type="number">
+                <input type="number" [(ngModel)]="newemployee.PhoneNo">
                 <label for="">Email:</label>
-                <input type="email">
+                <input type="email" [(ngModel)]="newemployee.Email">
                 <label for="">DOB:</label>
                 <input type="date">
             </div>
             <div class="t3">
                 <label for="">Gender: </label>
-                <input type="radio">
+                <input type="radio" [(ngModel)]="newemployee.Gender">
                 <label for="">Male</label>
-                <input type="radio">
+                <input type="radio" [(ngModel)]="newemployee.Gender">
                 <label for="">Female</label>
                 <label for="">Address</label>
                 <textarea name="" id=""></textarea >
             </div>
             <div class="t4">
-                <button>Register</button>
-                <button>Clear</button>
+                <button (click)="register()">Register</button>
+                <button (click)="clear()">Clear</button>
             </div>            
         </form>
         <h2 id="op">Employees Details</h2>        
@@ -53,21 +53,21 @@
                 <th>Action</th>
             </thead>
             <tbody>
-                <tr *ngFor="let Employee of employees;let i=index">
+                <tr *ngFor="let employee of employees;let i=index">
 
-                    <td>{{Employee.S.No}}</td>
-                    <td>{{Employee.Emp_Id}}</td>
-                    <td>{{Employee.Emp_Name}}</td>
-                    <td>{{Employee.Role}}</td>
-                    <td>{{Employee.Joining_Date}}</td>
-                    <td>{{Employee.Phone_No}}</td>
-                    <td>{{Employee.Email}}</td>
-                    <td>{{Employee.DOB}}</td>
-                    <td>{{Employee.Gender}}</td>
-                    <td>{{Employee.Address}}</td>
+                    <td>{{i+1}}</td>
+                    <td>{{employee.Empid}}</td>
+                    <td>{{employee.EmpName}}</td>
+                    <td>{{employee.Role}}</td>
+                    <td>{{employee.JoiningDate | date}}</td>
+                    <td>{{employee.PhoneNo}}</td>
+                    <td>{{employee.Email}}</td>
+                    <td>{{employee.DOB | date}}</td>
+                    <td>{{employee.Gender}}</td>
+                    <td>{{employee.Address}}</td>
                     <!-- <td>{{Action}}</td> -->
                     <td>
-                        <button >Fire</button>
+                        <button (click)="delete(i)" >Delete</button>
                     </td>
 
                 </tr>

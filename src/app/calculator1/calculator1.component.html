@@ -1,0 +1,16 @@
+
+<div>
+    <h2>Calculator1</h2>
+    
+    <label for="">Num1: </label>
+    <input type="number"[(ngModel)]="num1">
+    <br>
+
+    <label for="">Num2</label>
+    <input type="number" [(ngModel)]="num2">
+    <br>
+
+    <h2>Answer is {{result}}  </h2>
+
+    <app-operations [num1]="num1" [num2]="num2" (result)="catch($event)"></app-operations>
+</div>

@@ -34,7 +34,7 @@
                     </div>
                     <div class="n3">
                         <label for="">Rating :</label>
-                        <input type="number" [(ngModel)]="newpro.rating" name="rating">
+                        <input type="number" [(ngModel)]="newpro.rating" name="rating" >
                     </div>
                     <div class="n4">
                         <label for="">Free Delivery</label>
@@ -65,7 +65,10 @@
                         <td>{{i+1}}</td>
                         <td>{{product.name}}</td>
                         <td>{{product.price | price }}</td>
-                        <td>{{product.rating}}</td>
+                        <td>
+                            {{product.rating}}
+                            <app-rating [rating]="product.rating"></app-rating>
+                        </td>
                         <td>{{product.freedelivery}}</td>
                         <td>
                             <button id="del" (click)="delete(i)">delete</button>
@@ -81,3 +84,5 @@
     </div>
 
  </div>
+
+ 
