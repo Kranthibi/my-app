@@ -62,7 +62,12 @@ const routes: Routes = [
     {path:'parent',component:ParentComponent},
     {path:'calculator1',component:Calculator1Component  },
     {path:'rating',component:RatingComponent},
-    {path:'about-company',component:AboutCompanyComponent}
+    {path:'about-company',component:AboutCompanyComponent},
+    // {path:'payment', import payment module}
+    {
+      path: 'payments',
+      loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
+    },
     ]},
   {path:'google',component:GoogleComponent},
   {path:'',component:LoginComponent},
