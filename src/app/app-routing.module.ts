@@ -67,8 +67,9 @@ const routes: Routes = [
     {path:'parent',component:ParentComponent},
     {path:'calculator1',component:Calculator1Component  },
     {path:'rating',component:RatingComponent},
+    {path:'about-company-four',component:AboutCompanyComponent},
+    {path:'user-four'},
     {path:'about-company-three',component:AboutCompanyComponent},
-    {path:'user-one'},
     {path:'user-three'},
     // {path:'payment', import payment module}
     {
