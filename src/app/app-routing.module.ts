@@ -56,13 +56,14 @@ const routes: Routes = [
     {path:'vehicledetails/:id',component:VehicledetailsComponent},
     {path:'createvehicle',component:CreatevehicleComponent},
     {path:'edit-vehicle/:id',component:CreatevehicleComponent},
-    {path:'memes',component:MemesComponent},
+    {path:'memes-one',component:MemesComponent},
     {path:'form',canDeactivate:[NotifyGuard] ,component:FormComponent},
     {path:'create-company',canDeactivate:[NotifyGuard],component:CreateCompanyComponent},
     {path:'parent',component:ParentComponent},
     {path:'calculator1',component:Calculator1Component  },
     {path:'rating',component:RatingComponent},
     {path:'about-company',component:AboutCompanyComponent},
+    {path:'user-one'},
     // {path:'payment', import payment module}
     {
       path: 'payments',
