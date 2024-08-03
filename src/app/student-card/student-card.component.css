@@ -1,0 +1,125 @@
+/* Parent container */
+.parent {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+/* Top section styling */
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ddd;
+}
+
+.top input[type="text"] {
+    padding: 5px;
+    width: 200px;
+}
+
+.top label {
+    margin-right: 5px;
+}
+
+.top select {
+    padding: 5px;
+}
+
+.top button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.top button:hover {
+    background-color: #0056b3;
+}
+
+/* Bottom section styling */
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* padding: 20px; */
+}
+
+/* Card styling */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    margin: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* overflow: hidden; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+.cardup {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    height: 10%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+}
+
+.cardmiddle {
+    padding: 0px;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.c1{
+    padding: 0px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: inline;
+    margin: 0px;
+    /* background-color: red; */
+}
+h4{
+    margin: 0;
+    padding: 0;
+}
+
+.cardmiddle img {
+    border-radius: 50%;
+    /* margin-bottom: 10px; */
+}
+
+.cardbottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f9f9f9;
+    height: 10%;
+}
+
+.cardbottom button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.cardbottom button:hover {
+    background-color: #0056b3;
+}

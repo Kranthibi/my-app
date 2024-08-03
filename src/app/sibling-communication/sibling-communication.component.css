@@ -1,0 +1,16 @@
+.box{
+    background-color: lavenderblush;
+    height: 250px;
+    width: 350px;
+    display: inline-block;
+    margin: 20px;
+}
+.box1{
+    background-color: lightpink;
+    height: 150px;
+    width: 800px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 150px;
+
+}

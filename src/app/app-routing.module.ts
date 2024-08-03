@@ -32,6 +32,9 @@ import { Calculator1Component } from './calculator1/calculator1.component';
 import { RatingComponent } from './rating/rating.component';
 import { MemesComponent } from './memes/memes.component';
 import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
+import { SiblingCommunicationComponent } from './sibling-communication/sibling-communication.component';
+import { StudentCardComponent } from './student-card/student-card.component';
+import { CreatestudentcardComponent } from './createstudentcard/createstudentcard.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -55,6 +58,8 @@ const routes: Routes = [
     {path:'vehicle',component:VehicleComponent},
     {path:'vehicledetails/:id',component:VehicledetailsComponent},
     {path:'createvehicle',component:CreatevehicleComponent},
+    {path:'student-card',component:StudentCardComponent},
+    {path:'create-studentcard',component:CreatestudentcardComponent},
     {path:'edit-vehicle/:id',component:CreatevehicleComponent},
     {path:'memes',component:MemesComponent},
     {path:'form',canDeactivate:[NotifyGuard] ,component:FormComponent},
@@ -68,6 +73,7 @@ const routes: Routes = [
       path: 'payments',
       loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
     },
+    {path:'sibling-communication',component:SiblingCommunicationComponent}
     ]},
   {path:'google',component:GoogleComponent},
   {path:'',component:LoginComponent},
