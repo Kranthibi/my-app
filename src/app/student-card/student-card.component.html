@@ -1,0 +1,68 @@
+<div class="parent">
+  <!-- <form [formGroup]="studentForm"> -->
+        <div class="top">
+            <input type="text" placeholder=" Search student">
+            <label for="">SortColumn: </label>
+            <select name="" id="">
+                <option value="">Name</option>
+                <option value="">City</option>
+            </select>
+            <label for="">SortOrder</label>
+            <select name="" id="">
+                <option value="">asc</option>
+                <option value="">desc</option>
+            </select>
+            <label for="">Limit</label>
+            <select name="" id="">
+                <option value="">10</option>
+                <option value="">20</option>
+                <option value="">30</option>
+                <option value="">40</option>
+                <option value="">50</option>
+                <option value="">60</option>
+            </select>
+            <button>Sort</button>
+            <label for="">Page</label>
+            <select name="" id="">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+            </select>
+            <button>Page</button>
+        </div>
+
+
+        <div class="bottom">
+            <div class="card" *ngFor="let student of students ">
+                <div class="cardup">
+                    <img src="{{student.school_logo}}" alt="" width="50px" height="50px">
+                    <label for="">{{student.school_name}}</label>
+
+                </div>
+                <div class="cardmiddle" >
+                    <div class="c1">
+                        <h4><label for="">Name :{{student.name}}</label></h4> <br>
+                        <h4><label for="">Phone:{{student.phone}}</label></h4><br>
+                        <h4><label for="">DOB: {{student.dob}}</label></h4><br>
+                        <h4><label for="">City: {{student.city}}</label></h4><br>
+                        <h4><label for="">Email: {{student.email}}</label></h4><br>
+
+                    </div>
+                    <div class="c2">
+                        <img src="{{student.profile_picture}}" alt="" width="200px" height="200px">
+                    </div>
+                  
+                </div>
+                <div class="cardbottom">
+                    <label for="">{{student.school_city}}</label>
+                    <label for="">{{student.school_pin}}</label>
+                    <button>View</button>
+                    <button routerLink="/dashboard/create-studentcard/{{student.id}}">Edit</button>
+                    <button (click)="delete(student.id)">Delete</button>
+                </div>
+
+            </div>
+        </div>
+  <!-- </form> -->
+</div>

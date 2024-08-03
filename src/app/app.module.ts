@@ -42,6 +42,13 @@ import { OperationsComponent } from './operations/operations.component';
 import { RatingComponent } from './rating/rating.component';
 import { MemesComponent } from './memes/memes.component';
 import { AboutUsModule } from './about-us/about-us.module';
+import { ItemsComponent } from './items/items.component';
+import { NavigateComponent } from './navigate/navigate.component';
+import { CartsComponent } from './carts/carts.component';
+import { DiscountComponent } from './discount/discount.component';
+import { SiblingCommunicationComponent } from './sibling-communication/sibling-communication.component';
+import { StudentCardComponent } from './student-card/student-card.component';
+import { CreatestudentcardComponent } from './createstudentcard/createstudentcard.component';
 
 
 @NgModule({
@@ -82,7 +89,14 @@ import { AboutUsModule } from './about-us/about-us.module';
     Calculator1Component,
     OperationsComponent,
     RatingComponent,
-    MemesComponent
+    MemesComponent,
+    ItemsComponent,
+    NavigateComponent,
+    CartsComponent,
+    DiscountComponent,
+    SiblingCommunicationComponent,
+    StudentCardComponent,
+    CreatestudentcardComponent
   ],
   imports: [
     BrowserModule,
