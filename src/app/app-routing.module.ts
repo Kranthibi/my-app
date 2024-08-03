@@ -68,8 +68,9 @@ const routes: Routes = [
     {path:'calculator1',component:Calculator1Component  },
     {path:'rating',component:RatingComponent},
     {path:'about-company-four',component:AboutCompanyComponent},
-    {path:'user-one'},
-    {path:'user-four'}
+    {path:'user-four'},
+    {path:'about-company-three',component:AboutCompanyComponent},
+    {path:'user-three'},
     // {path:'payment', import payment module}
     {
       path: 'payments',
